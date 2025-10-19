@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Countries API</title>
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="header.js" type="module"></script>
+    <script src="app.js" type="module"></script>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navigation">
+        <h2 class="nav-title">Where in the World?</h2>
+        <div class="change-mode">
+          <p class="mode-imgs">
+            <img
+              class="light-moon"
+              src="./icons/moon-light.svg"
+              alt="light-moon"
+            />
+            <img
+              class="dark-moon"
+              src="./icons/moon-dark.svg"
+              alt="dark-moon"
+            />
+          </p>
+          Dark Mode
+        </div>
+      </nav>
+    </header>
+    <main class="main">
+      <div class="features">
+        <div class="search-bar">
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            class="search-icon"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M15 10.5C15 12.9853 12.9853 15 10.5 15C8.01472 15 6 12.9853 6 10.5C6 8.01472 8.01472 6 10.5 6C12.9853 6 15 8.01472 15 10.5ZM14.1793 15.2399C13.1632 16.0297 11.8865 16.5 10.5 16.5C7.18629 16.5 4.5 13.8137 4.5 10.5C4.5 7.18629 7.18629 4.5 10.5 4.5C13.8137 4.5 16.5 7.18629 16.5 10.5C16.5 11.8865 16.0297 13.1632 15.2399 14.1792L20.0304 18.9697L18.9697 20.0303L14.1793 15.2399Z"
+            />
+          </svg>
+          <input
+            type="text"
+            class="search-input"
+            placeholder="Search a country..."
+          />
+        </div>
+        <div class="filter-menu">
+          <div class="filter-title">
+            Filter by Region
+            <svg
+              viewBox="0 0 1024 1024"
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              class="dropdown-img"
+            >
+              <path
+                d="M903.232 256l56.768 50.432L512 768 64 306.432 120.768 256 512 659.072z"
+              />
+            </svg>
+          </div>
+          <div class="filter-options">
+            <option value="africa" class="option">Africa</option>
+            <option value="americas" class="option">America</option>
+            <option value="asia" class="option">Asia</option>
+            <option value="europe" class="option">Europe</option>
+            <option value="oceania" class="option">Oceania</option>
+          </div>
+        </div>
+      </div>
+      <div class="countries">Loading...</div>
+    </main>
+  </body>
+</html>

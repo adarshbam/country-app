@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 1rem;
+}
+a {
+  color: var(--text);
+  text-decoration: none;
+}
+body {
+  margin: 0;
+  background-color: var(--background);
+  color: var(--text);
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.main {
+  max-width: 75rem;
+  width: 100%;
+  margin-inline: auto;
+  padding: var(--padding);
+  padding-block: 0;
+}
+
+.border-countries p {
+  display: flex;
+  align-items: center;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  gap: 0.5rem;
+  width: max-content;
+  box-shadow: var(--shadow);
+  font-size: 0.875rem;
+  font-weight: 600;
+  padding: 0.25rem 1.5rem;
+  background-color: var(--elements);
+}
+
+.back-button {
+  margin-block: 4rem;
+  padding: 0.75rem 2rem;
+}
+
+.country {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+.country span {
+  font-weight: 700;
+}
+
+.country p {
+  font-weight: 400;
+  font-size: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.75rem;
+}
+
+.country h1 {
+  font-size: 2.25rem;
+  font-weight: 800;
+  margin-bottom: 1.25rem;
+}
+
+.country .border-countries {
+  margin-top: 3rem;
+}
+
+.country-details {
+  padding-block: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.country img {
+  width: 50%;
+  box-shadow: var(--shadow);
+}
+
+.back-button svg {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.back-button-img {
+  fill: var(--text);
+}
+
+.borders-countries .title {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.borders {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 10px;
+}
+
+@media (width <= 1020px) {
+  html {
+    font-size: 0.75rem;
+  }
+
+  .country {
+    gap: 3rem;
+  }
+}
+
+@media (width <= 780px) {
+  .back-button {
+    margin-block: 3rem;
+  }
+
+  .country {
+    flex-direction: column;
+  }
+  .country-details {
+  }
+
+  .country p {
+    font-size: 1.2rem;
+  }
+
+  .country img {
+    width: 85%;
+  }
+  .country-about {
+    width: 85%;
+  }
+}
+
+@media (width <= 480px) {
+  :root {
+    --padding: 1rem 2.5rem;
+  }
+  .country-about {
+    width: 100%;
+  }
+  .country img {
+    width: 100%;
+  }
+
+  .country-details {
+    display: block;
+  }
+}
