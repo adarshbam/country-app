@@ -1,4 +1,5 @@
 const main = document.querySelector(".main");
+const backButton = document.querySelector(".back-button");
 let country = new URLSearchParams(window.location.search)
   .get("country")
   .toLocaleLowerCase();
@@ -71,9 +72,14 @@ async function getCountry() {
         .join(" ")}</span></p>
     </div>
   </div>`;
+  console.log(window.history);
 
   main.append(countryElement);
 }
+
+backButton.addEventListener("click", () => {
+  window.history.back();
+});
 
 getCountry();
 console.log(country);
